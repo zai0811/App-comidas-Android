@@ -1,2 +1,2 @@
 # App-comidas-Android
-app de comidas para celiacos
+App de comidas para cel!ac0s
