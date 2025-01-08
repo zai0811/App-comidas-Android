@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/componente_borde_categoria"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:scaleType="centerCrop">
+
+        <!-- Imagen de la categoría -->
+        <ImageView
+            android:id="@+id/imageViewCategory"
+            android:layout_width="129dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo" />
+
+        <!-- Nombre de la categoría -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_margin="0dp"
+            android:gravity="center_horizontal"
+            android:padding="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <!-- Botón para ver recetas -->
+        <Button
+            android:id="@+id/button"
+            android:layout_margin="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#fff"
+            android:text="Ver recetas"
+            android:textColor="#555555" />
+
+    </LinearLayout>
+
+</LinearLayout>

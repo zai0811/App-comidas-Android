@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="Widget.Theme.AppComidas.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/white</item>
+
+    </style>
+
+    <style name="Widget.Theme.AppComidas.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/white</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+</resources>

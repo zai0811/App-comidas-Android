@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--componente para agregaar borde-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#00000000" /> <!-- Fondo transparente -->
+    <stroke
+        android:width="2dp"
+        android:color="#FFC660" /> <!-- Borde amarillo -->
+    <corners android:radius="10dp" /> <!-- Esquinas redondeadas -->
+</shape>

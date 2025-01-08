@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FfFfFF"
+    android:theme="@style/ThemeOverlay.AppComidas.FullscreenContainer"
+    tools:context=".WelcomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSubCategory"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#9dd227"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/white">
+        <TextView
+            android:id="@+id/toolbarLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celiac Recipes"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:scaleType="fitCenter" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/logoPrincipal"
+        android:layout_width="258dp"
+        android:layout_height="333dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/inicio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="BIENVENIDO"
+        android:textColor="#9dd227"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_text_vista"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="432dp"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="@string/user_name_lastmane"
+        android:textColor="#757575"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/frase"
+        android:layout_width="217dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="A nuestra app de recetas sin gluten. Presiona el siguiente boton para ver las categorias disponibles"
+        android:textColor="#030000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.374"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#9dd227"
+        android:text="@string/acceder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

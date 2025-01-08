@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#9dd227"
+        android:titleTextColor="@android:color/white">
+
+        <TextView
+            android:id="@+id/toolbarLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celiac Recipes"
+
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:textSize="26sp"
+
+            android:textStyle="bold"
+            android:scaleType="fitCenter"  />
+    </Toolbar>
+
+
+    <!-- LinearLayout principal para contener varios frames -->
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp"
+        tools:context=".categoryActivity">
+
+
+        <ImageView
+            android:id="@+id/imagenSubcategory"
+            android:layout_width="100dp"
+            android:layout_height="116dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/comidaId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:background="@drawable/componente_borde" />
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#9dd227"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Atrás"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
